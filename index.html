@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav bd_grid">
+            <div>
+                <a href="#" class="nav_logo">Ayisha Portfolio</a>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_items"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_items"><a href="#about" class="nav_link active">About</a></li>
+                    <li class="nav_items"><a href="#skills" class="nav_link active">Skills</a></li>
+                    <li class="nav_items"><a href="#work" class="nav_link active">Work</a></li>
+                    <li class="nav_items"><a href="#contact" class="nav_link active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="bx bx-menu-alt-right" ></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home -->
+        <section class="home bd_grid" id="home">
+            <div class="home_data" data-aos="fade-down">
+                <h1 class="home_title">
+                    Hi, <br />I'm <span class="home_title-color">Ayisha</span>
+                    <br> Python Developer
+                </h1>
+                <br>
+                <br>
+                <a href="#contact" class="home_button button">Contact</a>
+            </div>
+            <div class="home_social">
+                <a href="#" class="home_social-icon" data-aos="fade-down" data-aos-delay="300"><i class="bx bxl-github"></i></a>
+                <a href="#" class="home_social-icon" data-aos="fade-down" data-aos-delay="350"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="home_img" data-aos="fade-down" data-aos-delay="500">
+                <img src="./Images/home_page.svg" alt="home page Image">
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <section class="about section" id="about" >
+            <h2 class ="section-title" data-aos="fade-down">About</h2>
+            <div class="about_container bd_grid">
+                <div class="about_img" data-aos="fade-down" data-aos-delay="250">
+                <img src="./Images/about_me.svg" alt="about Image">  
+                </div>
+                <div>
+                    <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">I'm Ayisha Mohamed Ameer Jamin</h2>
+                    <p class="about_text" data-aos="fade-down" data-aos-delay="500">
+                        Structured and motivated Python Developer with hands-on experience in building and
+                        maintaining scalable web applications. I am proficient in Python, web frameworks like
+                        Flask and Django, and database management. Strong foundation in working with APIs,
+                        version control, and front-end basics. Eager to apply problem-solving skills and learn new
+                        technologies in a collaborative team environment.
+                    </p>
+                </div>
+
+            </div>
+            
+        </section>
+        <!-- Skills -->
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title" data-aos="fade-down">Skills</h2>
+            <div class="skills_container bd_grid">
+                <div>
+                    <h2 class="skills_subtitle" data-aos="fade-down" data-aos-delay="250">Professional Skills</h2>
+                    <p class="skills_text" data-aos="fade-down" data-aos-delay="300">
+                       Every bug I fix is a lesson; every challenge, a step forward. Growth isn’t in perfection 
+                       — it’s in persistence  
+                    </p>
+                    <!--Skills Html-->
+
+                    <div class="skills_data" data-aos="fade-right" >
+                        <div class="skills_row">
+                            <div class="skills_name">
+                                <i class="bx bxl-html5 skill_icon"></i>
+                                <span class="skill_name">Html5</span>
+                            </div>
+                            <span class="skill_percentage">95%</span>
+                        </div>
+
+                        <div class="skills_bar skill_html"></div>
+                        
+                    </div>
+                    <!-- skills CSS-->
+                    <div class="skills_data" data-aos="fade-down" data-aos-delay="250">
+                        <div class="skills_row">
+                            <div class="skills_name">
+                                <i class="bx bxl-css3 skill_icon"></i>
+                                <span class="skill_name">CSS3</span>
+                            </div>
+                            <span class="skill_percentage">95%</span>
+                        </div>
+
+                        <div class="skills_bar skill_css"></div>
+                    </div>
+
+                    <!-- skills JS-->
+                    <div class="skills_data" data-aos="fade-down" data-aos-delay="250">
+                        <div class="skills_row">
+                            <div class="skills_name">
+                                <i class="bx bxl-javascript skill_icon"></i>
+                                <span class="skill_name">JavaScript</span>
+                            </div>
+                            <span class="skill_percentage">95%</span>
+                        </div>
+                        <div class="skills_bar skill_js"></div>
+                    </div>
+                </div>
+                <div  data-aos="fade-left" data-aos-delay="350">
+                    <img src ="./Images/skill.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- work -->
+         <section class="work section" id="work">
+            <h2 class="section-title" data-aos="fade-down" >Work</h2>
+            <div class="work_container bd_grid" data-aos="fade-down" data-aos-delay="250">
+                <div class="work_img">
+                    <img src="./Images/work1.jpg" alt="">
+                </div>
+                <div class="work_img">
+                    <img src="./Images/work2.jpg" alt="">
+                </div>
+            </div>
+         </section>
+        <!-- contact -->
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title" data-aos="fade-down" >Contact</h2>
+
+            <div class="contact_container bd_grid">
+                <form action="#" class="contact_form">
+                    <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250" />
+                    <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="350" />
+                    <textarea name="" id="" cols="0" rows="10" class="control_input" data-aos="fade-right" data-aos-delay="450">
+                    </textarea>
+                    <input type="button" value="send" class="control_button button" data-aos="fade-right" data-aos-delay="500"/>
+                </form>
+            </div>
+        </section>
+
+        <!--fOOTER SECTION-->
+        <footer class="footer">
+            <p class="footer_title" data-aos="fade-down" >Ayisha Mohamed Ameer Jamin</p>
+            <div class="footer_socials">
+                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="250"><i class="bx bxl-github"></i></a>
+                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="300"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <p >&#169; 2025 copyright all right reserved</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JS/main.js"></script>
+    <script>
+        AOS.init({
+            duration : 1000,
+            once : false
+        });
+    </script>
+</body>
+</html>
