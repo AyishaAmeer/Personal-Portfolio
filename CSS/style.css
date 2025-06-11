@@ -394,12 +394,12 @@ img{
 }
 
 /* Fill levels per skill */
-.skill_html::before { width: 95%; }
-.skill_css::before { width: 85%; }
-.skill_js::before { width: 75%; }
-.skill_uiux::before { width: 85%; }
-
-
+.skill_python::before { width: 90%; }
+.skill_ml::before { width: 85%; }
+.skill_db::before { width: 80%; }
+.skill_frontend::before { width: 80%; }
+.skill_git::before { width: 85%; }
+.skill_datavisual::before { width: 75%; }
 
 
 /* Work */

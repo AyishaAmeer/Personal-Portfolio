@@ -1,179 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ayisha | Python Developer Portfolio</title>
+
+  <!-- ✅ SEO Enhancements -->
+  <meta name="description" content="Ayisha's personal portfolio showcasing Python skills, projects, and contact info.">
+  <meta name="author" content="Ayisha Mohamed Ameer Jamin">
+  <link rel="icon" href="./Images/favicon.png" type="image/png" />
+
+  <!-- ✅ CSS and Animation Libraries -->
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="header">
-        <nav class="nav bd_grid">
-            <div>
-                <a href="#" class="nav_logo">Ayisha Portfolio</a>
+  <header class="header">
+    <nav class="nav bd_grid">
+      <div>
+        <a href="#" class="nav_logo">Ayisha Portfolio</a>
+      </div>
+      <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_items"><a href="#home" class="nav_link active">Home</a></li>
+          <li class="nav_items"><a href="#about" class="nav_link active">About</a></li>
+          <li class="nav_items"><a href="#skills" class="nav_link active">Skills</a></li>
+          <li class="nav_items"><a href="#work" class="nav_link active">Work</a></li>
+          <li class="nav_items"><a href="#contact" class="nav_link active">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav_toggle" id="nav_toggle" aria-label="Toggle navigation">
+        <i class="bx bx-menu-alt-right"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Home Section -->
+    <section class="home bd_grid" id="home">
+      <div class="home_data" data-aos="fade-down">
+        <h1 class="home_title">
+          Hi, <br />I'm <span class="home_title-color">Ayisha</span>
+          <br> Python Developer
+        </h1>
+        <a href="#contact" class="home_button button">Contact</a>
+      </div>
+
+      <!-- Social Icons with ARIA Labels -->
+      <div class="home_social">
+        <a href="https://github.com/" target="_blank" class="home_social-icon" aria-label="GitHub" data-aos="fade-down" data-aos-delay="300">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="home_social-icon" aria-label="LinkedIn" data-aos="fade-down" data-aos-delay="350">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="home_img" data-aos="fade-down" data-aos-delay="500">
+        <img src="./Images/home_page.svg" alt="Illustration of developer working at desk" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2 class="section-title" data-aos="fade-down">About</h2>
+      <div class="about_container bd_grid">
+        <div class="about_img" data-aos="fade-down" data-aos-delay="250">
+          <img src="./Images/about_me.svg" alt="About me illustration" />
+        </div>
+        <div>
+          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">I'm Ayisha Mohamed Ameer Jamin</h2>
+          <p class="about_text" data-aos="fade-down" data-aos-delay="500">
+            Results-driven Python Developer with hands-on experience in building scalable web applications using Flask and Django. Proficient in designing REST APIs, managing SQL/NoSQL databases, and collaborating in Agile teams. Adept at turning complex problems into data-driven solutions. Passionate about continuous learning, clean code, and building intuitive user experiences.
+
+          <br>
+          <br>
+          </p>
+          <!-- ✅ Resume Download Button -->
+          <a href="./files/ayisha_resume.pdf" download class="button" data-aos="fade-up" data-aos-delay="600">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title" data-aos="fade-down">Skills</h2>
+      <div class="skills_container bd_grid">
+        <div>
+          <h2 class="skills_subtitle" data-aos="fade-down" data-aos-delay="250">Professional Skills</h2>
+          <p class="skills_text" data-aos="fade-down" data-aos-delay="300">
+            Every bug I fix is a lesson; every challenge, a step forward. Growth isn’t in perfection — it’s in persistence.
+          </p>
+          <br>
+          <!-- Skills List -->
+          
+          <div class="skills_data" data-aos="fade-right">
+            <div class="skills_row">
+              <div class="skills_name">
+                <i class="bx bxl-python skill_icon"></i>
+                <span class="skill_name">Python</span>
+              </div>
+              <span class="skill_percentage">90%</span>
             </div>
-            <div class="nav_menu" id="nav_menu">
-                <ul class="nav_list">
-                    <li class="nav_items"><a href="#home" class="nav_link active">Home</a></li>
-                    <li class="nav_items"><a href="#about" class="nav_link active">About</a></li>
-                    <li class="nav_items"><a href="#skills" class="nav_link active">Skills</a></li>
-                    <li class="nav_items"><a href="#work" class="nav_link active">Work</a></li>
-                    <li class="nav_items"><a href="#contact" class="nav_link active">Contact</a></li>
-                </ul>
+            <div class="skills_bar skill_python"></div>
+          </div>
+
+          <div class="skills_data" data-aos="fade-right">
+            <div class="skills_row">
+              <div class="skills_name">
+                <i class="bx bxs-brain skill_icon"></i>
+                <span class="skill_name">Machine learning</span>
+              </div>
+              <span class="skill_percentage">85%</span>
             </div>
-            <div class="nav_toggle" id="nav_toggle">
-                <i class="bx bx-menu-alt-right" ></i>
+            <div class="skills_bar skill_ml"></div>
+          </div>
+
+          <div class="skills_data" data-aos="fade-right">
+            <div class="skills_row">
+              <div class="skills_name">
+                <i class="bx bxs-data skill_icon"></i>
+                <span class="skill_name">Databases</span>
+              </div>
+              <span class="skill_percentage">80%</span>
             </div>
-        </nav>
-    </header>
+            <div class="skills_bar skill_db"></div>
+          </div>
 
-    <main class="main">
-        <!-- Home -->
-        <section class="home bd_grid" id="home">
-            <div class="home_data" data-aos="fade-down">
-                <h1 class="home_title">
-                    Hi, <br />I'm <span class="home_title-color">Ayisha</span>
-                    <br> Python Developer
-                </h1>
-                <br>
-                <br>
-                <a href="#contact" class="home_button button">Contact</a>
+          <div class="skills_data" data-aos="fade-right">
+            <div class="skills_row">
+              <div class="skills_name">
+                <i class="bx bx-code-alt skill_icon"></i>
+                <span class="skill_name">Frontend Languages</span>
+              </div>
+              <span class="skill_percentage">80%</span>
             </div>
-            <div class="home_social">
-                <a href="#" class="home_social-icon" data-aos="fade-down" data-aos-delay="300"><i class="bx bxl-github"></i></a>
-                <a href="#" class="home_social-icon" data-aos="fade-down" data-aos-delay="350"><i class="bx bxl-linkedin"></i></a>
+            <div class="skills_bar skill_frontend"></div>
+          </div>
+
+          <div class="skills_data" data-aos="fade-right">
+            <div class="skills_row">
+              <div class="skills_name">
+                <i class="bx bxl-github skill_icon"></i>
+                <span class="skill_name">GitHub</span>
+              </div>
+              <span class="skill_percentage">85%</span>
             </div>
-            <div class="home_img" data-aos="fade-down" data-aos-delay="500">
-                <img src="./Images/home_page.svg" alt="home page Image">
+            <div class="skills_bar skill_git"></div>
+          </div>
+
+          <div class="skills_data" data-aos="fade-right">
+            <div class="skills_row">
+              <div class="skills_name">
+                <i class="bx bxs-bar-chart-alt-2"></i>
+                <span class="skill_name">Power BI and Tableau</span>
+              </div>
+              <span class="skill_percentage">75%</span>
             </div>
-        </section>
+            <div class="skills_bar skill_datavisual"></div>
+          </div>
 
-        <!-- About -->
+          
+        </div>
+        <div data-aos="fade-left" data-aos-delay="350">
+          <img src="./Images/skill.svg" alt="Programming skills illustration" />
+        </div>
+      </div>
+    </section>
 
-        <section class="about section" id="about" >
-            <h2 class ="section-title" data-aos="fade-down">About</h2>
-            <div class="about_container bd_grid">
-                <div class="about_img" data-aos="fade-down" data-aos-delay="250">
-                <img src="./Images/about_me.svg" alt="about Image">  
-                </div>
-                <div>
-                    <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">I'm Ayisha Mohamed Ameer Jamin</h2>
-                    <p class="about_text" data-aos="fade-down" data-aos-delay="500">
-                        Structured and motivated Python Developer with hands-on experience in building and
-                        maintaining scalable web applications. I am proficient in Python, web frameworks like
-                        Flask and Django, and database management. Strong foundation in working with APIs,
-                        version control, and front-end basics. Eager to apply problem-solving skills and learn new
-                        technologies in a collaborative team environment.
-                    </p>
-                </div>
+    <!-- Work Section -->
+    <section class="work section" id="work">
+      <h2 class="section-title" data-aos="fade-down">Work</h2>
+      <div class="work_container bd_grid" data-aos="fade-down" data-aos-delay="250">
+        <div class="work_img">
+          <img src="./Images/copper.jpg" alt="Screenshot of copper project" />
+          <h3>Industrial Copper Modelling</h3>
+          <p>Developed pricing prediction models for copper using EDA, scikit-learn, and Streamlit. Achieved R² score of 0.95.</p>
+          <a href="https://github.com/AyishaAmeer/Industrial-Copper-Modeling" target="_blank">View Project</a>
+        </div>
+        <div class="work_img">
+          <img src="./Images/work2.jpg" alt="Screenshot of portfolio site" />
+          <h3>Portfolio Website</h3>
+          <p>This personal site you're viewing now. Built with HTML, CSS, JavaScript, and AOS animations.</p>
+          <a href="https://github.com/AyishaAmeer/Personal-Portfolio" target="_blank">View Project</a>
+        </div>
 
-            </div>
-            
-        </section>
-        <!-- Skills -->
+        <div class="work_img">
+          <img src="./Images/horse.jpg" alt="Screenshot of horserace predict prject" />
+          <h3>Horse Race Prediction</h3>
+          <p>Developed a machine learning model to predict outcomes of horse races using Scikit-learn and Streamlit. Achieved F1 score of 0.78 after hyperparameter tuning</p>
+          <a href="https://github.com/AyishaAmeer/Horse-Racing-Prediction" target="_blank">View Project</a>
+        </div>
 
-        <section class="skills section" id="skills">
-            <h2 class="section-title" data-aos="fade-down">Skills</h2>
-            <div class="skills_container bd_grid">
-                <div>
-                    <h2 class="skills_subtitle" data-aos="fade-down" data-aos-delay="250">Professional Skills</h2>
-                    <p class="skills_text" data-aos="fade-down" data-aos-delay="300">
-                       Every bug I fix is a lesson; every challenge, a step forward. Growth isn’t in perfection 
-                       — it’s in persistence  
-                    </p>
-                    <!--Skills Html-->
+        <div class="work_img">
+          <img src="./Images/Youtube.jpg" alt="Screenshot of youtube project" />
+          <h3>YouTube Data Harvesting and Warehousing</h3>
+          <p>Built an app to retrieve and warehouse data from YouTube API using SQL and MongoDB. Displayed analytics through an interactive Streamlit dashboard.</p>
+          <a href="https://github.com/AyishaAmeer/YouTube-Data-Harvesting-and-Warehousing-using-MongoDB-SQL-and-Streamlit" target="_blank">View Project</a>
+        </div>
 
-                    <div class="skills_data" data-aos="fade-right" >
-                        <div class="skills_row">
-                            <div class="skills_name">
-                                <i class="bx bxl-html5 skill_icon"></i>
-                                <span class="skill_name">Html5</span>
-                            </div>
-                            <span class="skill_percentage">95%</span>
-                        </div>
+        <div class="work_img">
+          <img src="./Images/Bizcard.jpg" alt="Screenshot of bizcardx project" />
+          <h3>BizCardX: OCR Business Card Data Extraction</h3>
+          <p>Created a system to extract business card data using OCR and structured it in a SQL database, with a user interface built in Streamlit</p>
+          <a href="https://github.com/AyishaAmeer/BizCardX-Extracting-Business-Card-Data-with-OCR" target="_blank">View Project</a>
+        </div>
 
-                        <div class="skills_bar skill_html"></div>
-                        
-                    </div>
-                    <!-- skills CSS-->
-                    <div class="skills_data" data-aos="fade-down" data-aos-delay="250">
-                        <div class="skills_row">
-                            <div class="skills_name">
-                                <i class="bx bxl-css3 skill_icon"></i>
-                                <span class="skill_name">CSS3</span>
-                            </div>
-                            <span class="skill_percentage">95%</span>
-                        </div>
+        <div class="work_img">
+          <img src="./Images/phonepe.png" alt="Screenshot of phonepe project" />
+          <h3>PhonePe Pulse Data Visualization and Exploration</h3>
+          <p>Built a system to extract and transform PhonePe Pulse data by cloning from GitHub using Python, processed it with Pandas, stored it in a MySQL database and developed an interactive Streamlit dashboard with Plotly.</p>
+          <a href="https://github.com/AyishaAmeer/Phonepe-Pulse-data-Visualization-and-Exploration" target="_blank">View Project</a>
+        </div>
 
-                        <div class="skills_bar skill_css"></div>
-                    </div>
+      </div>
+    </section>
 
-                    <!-- skills JS-->
-                    <div class="skills_data" data-aos="fade-down" data-aos-delay="250">
-                        <div class="skills_row">
-                            <div class="skills_name">
-                                <i class="bx bxl-javascript skill_icon"></i>
-                                <span class="skill_name">JavaScript</span>
-                            </div>
-                            <span class="skill_percentage">95%</span>
-                        </div>
-                        <div class="skills_bar skill_js"></div>
-                    </div>
-                </div>
-                <div  data-aos="fade-left" data-aos-delay="350">
-                    <img src ="./Images/skill.svg" alt="">
-                </div>
-            </div>
-        </section>
-        <!-- work -->
-         <section class="work section" id="work">
-            <h2 class="section-title" data-aos="fade-down" >Work</h2>
-            <div class="work_container bd_grid" data-aos="fade-down" data-aos-delay="250">
-                <div class="work_img">
-                    <img src="./Images/work1.jpg" alt="">
-                </div>
-                <div class="work_img">
-                    <img src="./Images/work2.jpg" alt="">
-                </div>
-            </div>
-         </section>
-        <!-- contact -->
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title" data-aos="fade-down">Contact</h2>
+      <div class="contact_container bd_grid">
+        <form action="https://formsubmit.co/contact.ayishajamin@gmail.com" method="POST" class="contact_form">
+          <input type="text" name="name" placeholder="Name" class="control_input" required data-aos="fade-right" data-aos-delay="250" />
+          <input type="email" name="email" placeholder="Email" class="control_input" required data-aos="fade-right" data-aos-delay="350" />
+          <textarea name="message" placeholder="Your message" rows="10" class="control_input" required data-aos="fade-right" data-aos-delay="450"></textarea>
+          <button type="submit" class="control_button button" data-aos="fade-right" data-aos-delay="500">Send</button>
+        </form>
+      </div>
+    </section>
 
-        <section class="contact section" id="contact">
-            <h2 class="section-title" data-aos="fade-down" >Contact</h2>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer_title" data-aos="fade-down">Ayisha Mohamed Ameer Jamin</p>
+      <div class="footer_socials">
+        <a href="#" class="footer_icon" aria-label="GitHub" data-aos="fade-down" data-aos-delay="250"><i class="bx bxl-github"></i></a>
+        <a href="#" class="footer_icon" aria-label="LinkedIn" data-aos="fade-down" data-aos-delay="300"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <p>&#169; 2025 All rights reserved.</p>
+    </footer>
+  </main>
 
-            <div class="contact_container bd_grid">
-                <form action="#" class="contact_form">
-                    <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250" />
-                    <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="350" />
-                    <textarea name="" id="" cols="0" rows="10" class="control_input" data-aos="fade-right" data-aos-delay="450">
-                    </textarea>
-                    <input type="button" value="send" class="control_button button" data-aos="fade-right" data-aos-delay="500"/>
-                </form>
-            </div>
-        </section>
-
-        <!--fOOTER SECTION-->
-        <footer class="footer">
-            <p class="footer_title" data-aos="fade-down" >Ayisha Mohamed Ameer Jamin</p>
-            <div class="footer_socials">
-                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="250"><i class="bx bxl-github"></i></a>
-                <a href="#" class="footer_icon" data-aos="fade-down" data-aos-delay="300"><i class="bx bxl-linkedin"></i></a>
-            </div>
-            <p >&#169; 2025 copyright all right reserved</p>
-        </footer>
-    </main>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./JS/main.js"></script>
-    <script>
-        AOS.init({
-            duration : 1000,
-            once : false
-        });
-    </script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./JS/main.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
