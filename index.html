@@ -2,255 +2,459 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Ayisha Mohamed Ameer Jamin – Python Developer, ML enthusiast, and Data Visualizer.">
+  <title>Ayisha Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-  <title>Ayisha | Python Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+    scroll-behavior: smooth;
+    }
 
-  <!-- ✅ SEO Enhancements -->
-  <meta name="description" content="Ayisha's personal portfolio showcasing Python skills, projects, and contact info.">
-  <meta name="author" content="Ayisha Mohamed Ameer Jamin">
-  <link rel="icon" href="./Images/favicon.png" type="image/png" />
+    body {
+    background: url('/Images/abstract-blue.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    }
 
-  <!-- ✅ CSS and Animation Libraries -->
-  <link rel="stylesheet" href="./CSS/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    .navbar {
+        background-color: #111;
+    }
+    .navbar-brand {
+        color: #58a6ff;
+        font-weight: bold;
+    }
+    .nav-link {
+        color: white !important;
+    }
+    .home {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-box {
+        max-width: 700px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid #333;
+        border-radius: 10px;
+        color: white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .btn-primary {
+        background-color: #58a6ff;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #1f6feb;
+    }
+    .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+    .progress {
+        background-color: #333;
+        height: 20px;
+    }
+    .progress-bar {
+        background-color: #58a6ff;
+    }
+    .skill label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+    }
+    i.devicon-django-plain {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    }
+    
+    .progress {
+        background-color: #222;
+        border-radius: 8px;
+        height: 18px;
+        overflow: hidden;
+    }
+    .progress-bar {
+    background: linear-gradient(to right, #58a6ff, #a258ff);
+    height: 100%;
+    line-height: 18px;
+    color: #fff;
+    font-size: 0.8rem;
+    padding-left: 10px;
+    border-radius: 8px;
+    transition: width 1s ease-in-out;
+    }
+
+    .card {
+        background-color: #111;
+        color: white;
+        border: 1px solid #333;
+    }
+    .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    border: 1px solid #333;
+    }
+    .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    }
+
+    .card-img-top:hover {
+    transform: scale(1.1);
+    } 
+
+    .card-body {
+    flex-grow: 1; /* Fills vertical space */
+    display: flex;
+    flex-direction: column;
+    }
+
+    .card-body .card-text {
+    flex-grow: 1; /* Push button to bottom */
+    }
+
+    .card-body .btn {
+    margin-top: 1rem;
+    }
+
+    .contact-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    button.btn {
+    margin-top: 1rem;
+    }
+
+
+    .footer {
+    background-color: #111;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    }
+    .footer i {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    }
+    
+
+    .footer i:hover {
+      color: #fff;
+    }
+    .footer .social-icons a {
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    .footer .social-icons i {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    }
+    .footer .social-icons a {
+      display: inline-block !important;
+    }
+
+
+    .footer .social-icons i:hover {
+      color: #fff;
+    }
+
+    
+</style>
 </head>
 <body>
-  <header class="header">
-    <nav class="nav bd_grid">
-      <div>
-        <a href="#" class="nav_logo">Ayisha Portfolio</a>
-      </div>
-      <div class="nav_menu" id="nav_menu">
-        <ul class="nav_list">
-          <li class="nav_items"><a href="#home" class="nav_link active">Home</a></li>
-          <li class="nav_items"><a href="#about" class="nav_link active">About</a></li>
-          <li class="nav_items"><a href="#skills" class="nav_link active">Skills</a></li>
-          <li class="nav_items"><a href="#work" class="nav_link active">Work</a></li>
-          <li class="nav_items"><a href="#contact" class="nav_link active">Contact</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ayisha Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="nav_toggle" id="nav_toggle" aria-label="Toggle navigation">
-        <i class="bx bx-menu-alt-right"></i>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main class="main">
-    <!-- Home Section -->
-    <section class="home bd_grid" id="home">
-      <div class="home_data" data-aos="fade-down">
-        <h1 class="home_title">
-          Hi, <br />I'm <span class="home_title-color">Ayisha</span>
-          <br> Python Developer
-        </h1>
-        <a href="#contact" class="home_button button">Contact</a>
-      </div>
+  <!-- Home Section -->
+  <section class="home" id="home" >
+    <div class="home_data" data-aos="fade-down">
+        <h1 >Hi, I am Ayisha <br><span class="text-info" >Python Developer</span></h1>
+        <a href="#contact" class="btn btn-primary mt-3">Contact</a>
+        <div class="social-icons mt-3">
+        <a href="https://github.com/AyishaAmeer" data-aos="fade-down" data-aos-delay="300" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/ayisha-ameer-3153452b2/" data-aos="fade-down" data-aos-delay="350" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+  </section>
 
-      <!-- Social Icons with ARIA Labels -->
-      <div class="home_social">
-        <a href="https://github.com/" target="_blank" class="home_social-icon" aria-label="GitHub" data-aos="fade-down" data-aos-delay="300">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://linkedin.com/" target="_blank" class="home_social-icon" aria-label="LinkedIn" data-aos="fade-down" data-aos-delay="350">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-      </div>
-
-      <div class="home_img" data-aos="fade-down" data-aos-delay="500">
-        <img src="./Images/home_page.svg" alt="Illustration of developer working at desk" />
-      </div>
+  <!-- About Section -->
+    <section id="about" class="py-5 d-flex justify-content-center align-items-center">
+        <div class="about-box text-center p-4">
+            <h2 class="mb-3" data-aos="fade-down">About Me</h2>
+            
+            <h3 data-aos="fade-down" data-aos-delay="350">I'm Ayisha Mohamed Ameer Jamin</h3>
+            <p data-aos="fade-down" data-aos-delay="500">
+            Results-driven Python Developer with hands-on experience in building scalable web applications using 
+            Flask and Django. Proficient in designing REST APIs, managing SQL/NoSQL databases, and collaborating in 
+            Agile teams. Adept at turning complex problems into data-driven solutions. Passionate about continuous 
+            learning, clean code, and building intuitive user experiences.
+            </p>
+            <a href="./files/Ayisha_portfolio_resume.pdf" download class="btn btn-primary mt-3" data-aos="fade-down" data-aos-delay="550">Download Resume</a>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
-      <h2 class="section-title" data-aos="fade-down">About</h2>
-      <div class="about_container bd_grid">
-        <div class="about_img" data-aos="fade-down" data-aos-delay="250">
-          <img src="./Images/about_me.svg" alt="About me illustration" />
-        </div>
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">I'm Ayisha Mohamed Ameer Jamin</h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="500">
-            Results-driven Python Developer with hands-on experience in building scalable web applications using Flask and Django. Proficient in designing REST APIs, managing SQL/NoSQL databases, and collaborating in Agile teams. Adept at turning complex problems into data-driven solutions. Passionate about continuous learning, clean code, and building intuitive user experiences.
-
-          <br>
-          <br>
-          </p>
-          <!-- ✅ Resume Download Button -->
-          <a href="./files/ayisha_resume.pdf" download class="button" data-aos="fade-up" data-aos-delay="600">Download Resume</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills section" id="skills">
-      <h2 class="section-title" data-aos="fade-down">Skills</h2>
-      <div class="skills_container bd_grid">
-        <div>
-          <h2 class="skills_subtitle" data-aos="fade-down" data-aos-delay="250">Professional Skills</h2>
-          <p class="skills_text" data-aos="fade-down" data-aos-delay="300">
-            Every bug I fix is a lesson; every challenge, a step forward. Growth isn’t in perfection — it’s in persistence.
-          </p>
-          <br>
-          <!-- Skills List -->
-          
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_row">
-              <div class="skills_name">
-                <i class="bx bxl-python skill_icon"></i>
+  <!-- Skills Section -->
+  <section id="skills" class="container py-5">
+    <h2 class="text-center mb-5" data-aos="fade-down" >Professional Skills</h2>
+    <div class="row">
+    <!-- Left Column -->
+        <div class="col-md-6">
+            <div class="skill mb-4" data-aos="fade-right">
+              <i class="fab fa-python"></i>
                 <span class="skill_name">Python</span>
-              </div>
-              <span class="skill_percentage">90%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
             </div>
-            <div class="skills_bar skill_python"></div>
-          </div>
-
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_row">
-              <div class="skills_name">
-                <i class="bx bxs-brain skill_icon"></i>
-                <span class="skill_name">Machine learning</span>
-              </div>
-              <span class="skill_percentage">85%</span>
+            <div class="skill mb-4" data-aos="fade-right" data-aos-delay="250">
+              <i class="fas fa-laptop-code"></i>
+                <span class="skill_name">Django</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
             </div>
-            <div class="skills_bar skill_ml"></div>
-          </div>
-
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_row">
-              <div class="skills_name">
-                <i class="bx bxs-data skill_icon"></i>
-                <span class="skill_name">Databases</span>
-              </div>
-              <span class="skill_percentage">80%</span>
+            <div class="skill mb-4" data-aos="fade-right" data-aos-delay="350">
+              <i class="bx bx-code-alt skill_icon"></i>
+                <span class="skill_name">HTML/CSS</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
             </div>
-            <div class="skills_bar skill_db"></div>
-          </div>
-
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_row">
-              <div class="skills_name">
-                <i class="bx bx-code-alt skill_icon"></i>
-                <span class="skill_name">Frontend Languages</span>
-              </div>
-              <span class="skill_percentage">80%</span>
+            <div class="skill mb-4" data-aos="fade-right" data-aos-delay="450">
+                <label>✨Javascript</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
             </div>
-            <div class="skills_bar skill_frontend"></div>
-          </div>
+            <div class="skill mb-4" data-aos="fade-right" data-aos-delay="500">
+                <label>🧩Flask</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill mb-4" data-aos="fade-right" data-aos-delay="500">
+               <label>📂NoSQL</label> 
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+        </div>
 
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_row">
-              <div class="skills_name">
+    <!-- Right Column -->
+
+        <div class="col-md-6" data-aos="fade-left" >
+            <div class="skill mb-4">
+                <label>🛢️MySQL</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill mb-4">
+                <label>⚡FAST API</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill mb-4" data-aos="fade-left" data-aos-delay="250">
+                <label>🤖 Machine Learning</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill mb-4" data-aos="fade-left" data-aos-delay="350">
+                <label>📊 Data Modelling</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill mb-4" data-aos="fade-left" data-aos-delay="450">
                 <i class="bx bxl-github skill_icon"></i>
                 <span class="skill_name">GitHub</span>
-              </div>
-              <span class="skill_percentage">85%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
             </div>
-            <div class="skills_bar skill_git"></div>
-          </div>
-
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_row">
-              <div class="skills_name">
-                <i class="bx bxs-bar-chart-alt-2"></i>
-                <span class="skill_name">Power BI and Tableau</span>
-              </div>
-              <span class="skill_percentage">75%</span>
+            <div class="skill mb-4" data-aos="fade-left" data-aos-delay="500">
+                <label>📈 Power BI and Tableau</label>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
             </div>
-            <div class="skills_bar skill_datavisual"></div>
-          </div>
+        </div>
+    </div>
+</section>
 
+
+  <!-- Projects Section -->
+  <section id="projects" class="container py-5">
+    <h2 class="text-center mb-4" data-aos="fade-down">Projects</h2>
+    <div class="row">
+      <!-- card for each project -->
+      <div class="col-md-4 mb-4">
+        <div class="card" data-aos="fade-down" data-aos-delay="250">
           
-        </div>
-        <div data-aos="fade-left" data-aos-delay="350">
-          <img src="./Images/skill.svg" alt="Programming skills illustration" />
+          <img src="Images/copper.jpg" class="card-img-top" alt="copper Project">
+        
+          <div class="card-body">
+            <h5 class="card-title">Industrial Copper Modelling</h5>
+            <p class="card-text">Developed pricing prediction models for copper using EDA, 
+                scikit-learn, and Streamlit. Achieved R² score of 0.95.</p>
+            <a href="https://github.com/AyishaAmeer/Industrial-Copper-Modeling" target="_blank" class="btn btn-primary">GitHub</a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Work Section -->
-    <section class="work section" id="work">
-      <h2 class="section-title" data-aos="fade-down">Work</h2>
-      <div class="work_container bd_grid" data-aos="fade-down" data-aos-delay="250">
-        <div class="work_img">
-          <img src="./Images/copper.jpg" alt="Screenshot of copper project" />
-          <h3>Industrial Copper Modelling</h3>
-          <p>Developed pricing prediction models for copper using EDA, scikit-learn, and Streamlit. Achieved R² score of 0.95.</p>
-          <a href="https://github.com/AyishaAmeer/Industrial-Copper-Modeling" target="_blank">View Project</a>
+      <div class="col-md-4 mb-4" >
+        <div class="card" data-aos="fade-down" data-aos-delay="250">
+          <img src="Images/work2.jpg" class="card-img-top" alt="Portfolio project">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">This personal site you're viewing now. Built with HTML, CSS, JavaScript, 
+                and AOS animations.</p>
+            <a href="https://github.com/AyishaAmeer/Personal-Portfolio" target="_blank" class="btn btn-primary">GitHub</a>
+          </div>
         </div>
-        <div class="work_img">
-          <img src="./Images/work2.jpg" alt="Screenshot of portfolio site" />
-          <h3>Portfolio Website</h3>
-          <p>This personal site you're viewing now. Built with HTML, CSS, JavaScript, and AOS animations.</p>
-          <a href="https://github.com/AyishaAmeer/Personal-Portfolio" target="_blank">View Project</a>
-        </div>
-
-        <div class="work_img">
-          <img src="./Images/horse.jpg" alt="Screenshot of horserace predict prject" />
-          <h3>Horse Race Prediction</h3>
-          <p>Developed a machine learning model to predict outcomes of horse races using Scikit-learn and Streamlit. Achieved F1 score of 0.78 after hyperparameter tuning</p>
-          <a href="https://github.com/AyishaAmeer/Horse-Racing-Prediction" target="_blank">View Project</a>
-        </div>
-
-        <div class="work_img">
-          <img src="./Images/Youtube.jpg" alt="Screenshot of youtube project" />
-          <h3>YouTube Data Harvesting and Warehousing</h3>
-          <p>Built an app to retrieve and warehouse data from YouTube API using SQL and MongoDB. Displayed analytics through an interactive Streamlit dashboard.</p>
-          <a href="https://github.com/AyishaAmeer/YouTube-Data-Harvesting-and-Warehousing-using-MongoDB-SQL-and-Streamlit" target="_blank">View Project</a>
-        </div>
-
-        <div class="work_img">
-          <img src="./Images/Bizcard.jpg" alt="Screenshot of bizcardx project" />
-          <h3>BizCardX: OCR Business Card Data Extraction</h3>
-          <p>Created a system to extract business card data using OCR and structured it in a SQL database, with a user interface built in Streamlit</p>
-          <a href="https://github.com/AyishaAmeer/BizCardX-Extracting-Business-Card-Data-with-OCR" target="_blank">View Project</a>
-        </div>
-
-        <div class="work_img">
-          <img src="./Images/phonepe.png" alt="Screenshot of phonepe project" />
-          <h3>PhonePe Pulse Data Visualization and Exploration</h3>
-          <p>Built a system to extract and transform PhonePe Pulse data by cloning from GitHub using Python, processed it with Pandas, stored it in a MySQL database and developed an interactive Streamlit dashboard with Plotly.</p>
-          <a href="https://github.com/AyishaAmeer/Phonepe-Pulse-data-Visualization-and-Exploration" target="_blank">View Project</a>
-        </div>
-
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-      <h2 class="section-title" data-aos="fade-down">Contact</h2>
-      <div class="contact_container bd_grid">
-        <form action="https://formsubmit.co/contact.ayishajamin@gmail.com" method="POST" class="contact_form">
-          <input type="text" name="name" placeholder="Name" class="control_input" required data-aos="fade-right" data-aos-delay="250" />
-          <input type="email" name="email" placeholder="Email" class="control_input" required data-aos="fade-right" data-aos-delay="350" />
-          <textarea name="message" placeholder="Your message" rows="10" class="control_input" required data-aos="fade-right" data-aos-delay="450"></textarea>
-          <button type="submit" class="control_button button" data-aos="fade-right" data-aos-delay="500">Send</button>
-        </form>
+      <div class="col-md-4 mb-4">
+        <div class="card" data-aos="fade-down" data-aos-delay="250">
+          <img src="Images/horseracedata.png" class="card-img-top" alt="Horse-race project">
+          <div class="card-body">
+            <h5 class="card-title">Horse Race Prediction</h5>
+            <p class="card-text">Developed a machine learning model to predict outcomes of horse races using Scikit-learn and 
+                Streamlit. Achieved F1 score of 0.78 after hyperparameter tuning</p>
+            <a href="https://github.com/AyishaAmeer/Horse-Racing-Prediction" target="_blank" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p class="footer_title" data-aos="fade-down">Ayisha Mohamed Ameer Jamin</p>
-      <div class="footer_socials">
-        <a href="#" class="footer_icon" aria-label="GitHub" data-aos="fade-down" data-aos-delay="250"><i class="bx bxl-github"></i></a>
-        <a href="#" class="footer_icon" aria-label="LinkedIn" data-aos="fade-down" data-aos-delay="300"><i class="bx bxl-linkedin"></i></a>
+      <div class="col-md-4 mb-4">
+        <div class="card" data-aos="fade-down" data-aos-delay="250">
+          <img src="Images/Youtube.jpg" class="card-img-top" alt="YouTube project">
+          <div class="card-body">
+            <h5 class="card-title">YouTube Data Harvesting and Warehousing</h5>
+            <p class="card-text">Built an app to retrieve and warehouse data from YouTube API using SQL and MongoDB. 
+                Displayed analytics through an interactive Streamlit dashboard.</p>
+            <a href="https://github.com/AyishaAmeer/YouTube-Data-Harvesting-and-Warehousing-using-MongoDB-SQL-and-Streamlit" target="_blank" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
       </div>
-      <p>&#169; 2025 All rights reserved.</p>
-    </footer>
-  </main>
+      <div class="col-md-4 mb-4">
+        <div class="card" data-aos="fade-down" data-aos-delay="250">
+          <img src="Images/Bizcard.jpg" class="card-img-top" alt="BizCardX project">
+          <div class="card-body">
+            <h5 class="card-title">BizCardX: OCR Business Card Data Extraction</h5>
+            <p class="card-text">Created a system to extract business card data using OCR and structured 
+                it in a SQL database, with a user interface built in Streamlit</p>
+            <a href="https://github.com/AyishaAmeer/BizCardX-Extracting-Business-Card-Data-with-OCR" target="_blank" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card" data-aos="fade-down" data-aos-delay="250">
+          <img src="Images/phonepe.png" class="card-img-top" alt="PhonePe project">
+          <div class="card-body">
+            <h5 class="card-title">PhonePe Pulse Data Visualization and Exploration</h5>
+            <p class="card-text">Built a system to extract and transform PhonePe Pulse data by cloning from GitHub using 
+                Python, processed it with Pandas, stored it in a MySQL database and developed an interactive Streamlit dashboard with Plotly.</p>
+            <a href="https://github.com/AyishaAmeer/Phonepe-Pulse-data-Visualization-and-Exploration" target="_blank" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
 
-  <!-- Scripts -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-5 d-flex justify-content-center align-items-center">
+  <div class="contact-box p-4" >
+    <h2 class="text-center mb-4"  data-aos="fade-down">Contact Me</h2>
+    <form action="https://formsubmit.co/contact.ayishajamin@gmail.com" method="POST">
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required data-aos="fade-right" data-aos-delay="250">
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required data-aos="fade-right" data-aos-delay="350">
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required data-aos="fade-right" data-aos-delay="450"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" data-aos="fade-right" data-aos-delay="500">Send</button>
+    </div>
+
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+  <p class="footer_title" data-aos="fade-down">Ayisha Mohamed Ameer Jamin</p>
+  <div class="social-icons mt-3" >
+    <a href="https://github.com/AyishaAmeer"  target="_blank" ><i class='bx bxl-github'></i></a>
+    <a href="https://www.linkedin.com/in/ayisha-ameer-3153452b2/"  target="_blank"><i class='bx bxl-linkedin'></i></a>
+  </div>
+  <br>
+  <p>&#169; 2025 All rights reserved.</p>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./JS/main.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+    <script>
+      window.addEventListener('load', () => {
+        AOS.init({
+          duration: 1000,
+          once: false
+        });
+      });
+</script>
+
 </body>
 </html>
